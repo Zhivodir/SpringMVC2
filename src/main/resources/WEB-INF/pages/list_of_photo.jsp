@@ -16,9 +16,9 @@
 
                  <c:forEach var="photo" items="${listOfPhotos}">
                  <tr>
-                     <td><input type="checkbox" name = "photo" value="a2"></td>
+                     <td><input type="checkbox" name = "checked_photos" value="${photo.key}"></td>
                      <td>${photo.key}</td>
-                     <td>${photo.value}</td>
+                     <td><img src="/photo/${photo.key}" width="100px" /></td>
                  </tr>
                  </c:forEach>
              </table>

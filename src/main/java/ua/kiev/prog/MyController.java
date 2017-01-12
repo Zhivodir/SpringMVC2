@@ -77,4 +77,12 @@ public class MyController {
         model.addAttribute("listOfPhotos", photos);
         return "list_of_photo";
     }
+
+    @RequestMapping(value = "/delete_all_checked", method = RequestMethod.POST)
+    public String delAllChecked(Model model, @RequestParam long[] checked_photos) {
+        for(Long photo : checked_photos){
+            photos.remove(photo);
+        }
+        return showList(model);
+    }
 }
