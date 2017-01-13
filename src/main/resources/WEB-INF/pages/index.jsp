@@ -18,6 +18,11 @@
          <form action="/list_of_photo">
              <input type="submit" value="List of photos" />
          </form>
+
+
+         <form action="/list_for_archive">
+             <input type="submit" value="List for archive" />
+         </form>
       </div>
   </body>
 </html>
